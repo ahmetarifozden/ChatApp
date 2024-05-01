@@ -1,7 +1,7 @@
 import sqlite3
 import tkinter as tk
 from tkinter import messagebox
-
+import menu
 # Veritabanı bağlantısını oluştur
 conn = sqlite3.connect('users.db')
 cursor = conn.cursor()
@@ -31,6 +31,8 @@ def login():
         messagebox.showinfo("Giriş Başarılı", "Hoş geldiniz, " + username + "!")
     else:
         messagebox.showerror("Giriş Başarısız", "Geçersiz kullanıcı adı veya parola!")
+    
+    
 
 # Ana uygulama penceresini oluştur
 root = tk.Tk()
