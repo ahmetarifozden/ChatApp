@@ -1,13 +1,20 @@
 import tkinter as tk
 from tkinter import messagebox
+#import BB
+#import BT 
+
 
 # Bireysel sohbet işlevi
 def individual_chat():
     messagebox.showinfo("Bireysel Sohbet", "Bireysel sohbet seçildi.")
-
+    str  = "individual_chat"
+    import BB
 # Bireysel-topluluk sohbet işlevi
 def group_chat():
+    import BT
     messagebox.showinfo("Bireysel-Topluluk Sohbet", "Bireysel-topluluk sohbet seçildi.")
+    str = "group_chat"
+    import BT
 
 # Ana pencereyi oluşturma işlevi
 def main_window():
